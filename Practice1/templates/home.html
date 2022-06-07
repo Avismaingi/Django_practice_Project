@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block style %}
+
+.container{
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-left: 80px;
+  width: 900px;
+  height: 750px;
+}
+
+p{
+  padding-top: 50px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #241f1c;
+  font-family: 'Roxborough CF Thin',regular;
+  font-weight: 10;
+  text-shadow: 1.5px 1.5px 0px #937047;
+}
+
+.container2{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #241f1c;
+  font-family: 'Roxborough CF Thin',regular;
+  font-weight: 10;
+}
+
+{% endblock style %}
+
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+<div class="container">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="/static/img/img1.jpg" class="d-block w-100" alt="img1">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/static/img/img2.jpg" class="d-block w-100" alt="img2">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/img3.jpg" class="d-block w-100" alt="img3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <p>FEEDBACK IS BREAKFAST OF CHAMPIONS</p>
+</div>
+<div class="container2">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia vel, cumque rem impedit ut quas ab ex, rerum dolores accusamus suscipit eveniet quos laborum et deleniti adipisci commodi. Dicta, molestiae! Hic autem eius voluptatibus repellat officia qui, beatae dignissimos earum eveniet perferendis ratione ipsum tempora officiis, vel voluptas maiores optio deserunt? Asperiores quisquam laboriosam quis ut beatae, ipsum sequi minima cupiditate blanditiis molestiae maxime placeat architecto velit commodi. Harum sint distinctio quisquam, nulla mollitia reiciendis! Dicta repellendus ipsa omnis eius harum eos nostrum expedita labore modi recusandae minus, eligendi inventore perferendis animi commodi nobis sunt quasi, maxime ab cum vero!
+</div>
+
+{% endblock body %}

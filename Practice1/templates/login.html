@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block style %}
+.container{
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 80px;
+    width: 700px;
+    height: 750px;
+  }
+{% endblock style %}
+
+{% block body %}
+<div class="container">
+    <form class="form-signin" method="POST" action="/user_login/">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="/register/">Register</a>
+    </form>
+</div>
+{% endblock body %}
